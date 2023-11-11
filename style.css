@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.backer {
+    background-image: url(./assets/images/woodplanks.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+body {
+
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    scale: .80;
+    margin-bottom: 10px;
+}
+
+.music-player {
+    background-image: url(./assets/images/mapaged.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 25px 30px rgba(4, 4, 4, 0.56);
+    border: 3px double rgb(67, 67, 67);
+    margin: 10px;
+}
+
+.card-back {
+    background-image: url(./assets/images/magic-card.jpeg);
+    background-position: center;
+    background-size: contain;
+    width: 350px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 25px 30px rgba(4, 4, 4, 0.56);
+    border: 3px double rgb(67, 67, 67);
+    margin: 10px;
+    height: 500px;
+}
+
+.card-front {
+    background-image: url(./assets/images/card-front.png);
+    background-position: center;
+    background-size: contain;
+    width: 350px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0 25px 30px rgba(4, 4, 4, 0.56);
+    border: 3px double rgb(67, 67, 67);
+    margin: 10px;
+    height: 500px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+   
+}
+
+.btn-music {
+    display: flex;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin: 10px;
+    line-height: 40px;
+    background: #fff;
+    color: #a68a2e;
+     box-shadow: 0 5px 10px rgba(255, 247, 26, 0.22);
+     align-items: center;
+     justify-content: center;
+     font-size: x-large;
+}
+
+nav .circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    line-height: 40px;
+    background: #fff;
+    color: #a68a2e;
+     box-shadow: 0 5px 10px rgba(255, 247, 26, 0.22);
+}
+
+
+
+.song-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 10px 60px rgba(26, 255, 95, 0.22);
+    margin-top: 20px;
+}
+
+.music-player h1 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #333;
+    margin-top: 20px;
+}
+
+.music-player p {
+    font-size: 21px;
+    font-weight: 300;
+    color: #333333c7;
+    margin-top: 5px;
+}
+
+.player {
+    margin-top: 15px;
+   
+}
+
+audio::-webkit-media-controls-panel {
+    background: rgba(128, 128, 128, 0.385);
+}
+
+
+#progress { 
+-webkit-appearance: none;
+width: 100%;
+height: 6px;
+background:fixed#ffffff;
+border-radius: 4px;
+cursor: pointer;
+margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-image: url(./assets/images/shield.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+.card-front:hover, .card-back:hover {
+    scale: 1.01;
+}
+
+.btn-music:hover {
+    scale: 1.05;
+}
+
+footer {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+}
+
+footer a {
+    margin-bottom: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 576px) {
+    .card-front, .card-back {
+        height: 350px;
+    }
+
+    footer {
+        margin: auto;
+        align-items: center;
+        justify-self: center;
+    }
+
+    .container {
+        margin: 0;
+        margin-top: -80px;
+        margin-bottom: -25px;
+    }
+
+    .link {
+        text-align: center;
+    }
+}
